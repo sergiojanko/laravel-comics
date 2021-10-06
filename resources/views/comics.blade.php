@@ -1,12 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+@extends('layout.main')
+
+@section('content')
+    <section id="content-section">
+            <ul class="container row">
+                @foreach ($comics as $comic)
+                <li class="col">
+                        <a href="{{ url("/comics/$loop->index") }}">
+                            <figure>
+                                <img src="{{$comic['thumb']}}" alt="">
+                                <figcaption>{{$comic['title']}}</figcaption>
+                            </figure>
+                        </a>
+                        </li>
+                    @endforeach
+            </ul>
+        <div class="row">
+            <button>LOAD MORE</button>
+        </div>
+    </section>
+@endsection

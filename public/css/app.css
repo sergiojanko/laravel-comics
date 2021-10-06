@@ -19,30 +19,9 @@ ul li a {
 }
 
 .row {
+    display: flex;
     justify-content: space-between;
-}
-#content-section {
-    background-color: #000;
-    color: #fff;
-    padding: 30px;
-}
-
-#content-section .row {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#content-section .col {
-    flex-basis: calc(100% / 6);
-}
-
-button {
-    display: block;
-    margin: auto;
-    color: #fff;
-    background-color: dodgerblue;
-    border: 0;
-    padding: 5px 20px;
-    cursor: pointer;
+    align-items: center;
 }
 * {
     box-sizing: border-box;
@@ -59,10 +38,6 @@ button {
     height: 100%;
 }
 
-.container .row .col {
-    height: 100%;
-}
-
 ul {
     display: flex;
     align-items: center;
@@ -73,5 +48,41 @@ ul li {
 }
 
 ul li a {
+    text-decoration: none;
+}
+
+section {
+    background-color: #000;
+    color: white;
+}
+main {
+    color: #777;
+}
+#content-section {
+    padding: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.row .col {
+    height: 100%;
+}
+button {
+    display: block;
+    margin: auto;
+    color: #fff;
+    background-color: dodgerblue;
+    border: 0;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+
+#content-section ul li a {
+    color: #fff;
     text-decoration: none;
 }

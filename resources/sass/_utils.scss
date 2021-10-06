@@ -13,10 +13,6 @@
     height: 100%;
 }
 
-.container .row .col {
-    height: 100%;
-}
-
 ul {
     display: flex;
     align-items: center;
@@ -28,4 +24,12 @@ ul li {
 
 ul li a {
     text-decoration: none;
+}
+
+section {
+    background-color: #000;
+    color: white;
+}
+main {
+    color: #777;
 }

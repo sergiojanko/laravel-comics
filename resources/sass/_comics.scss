@@ -1,17 +1,17 @@
 #content-section {
-    background-color: #000;
-    color: #fff;
     padding: 30px;
 }
 
-#content-section .row {
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-}
-#content-section .col {
-    flex-basis: calc(100% / 6);
 }
 
+.row .col {
+    height: 100%;
+}
 button {
     display: block;
     margin: auto;
@@ -20,4 +20,9 @@ button {
     border: 0;
     padding: 5px 20px;
     cursor: pointer;
+}
+
+#content-section ul li a {
+    color: #fff;
+    text-decoration: none;
 }
